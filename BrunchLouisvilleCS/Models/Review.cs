@@ -10,14 +10,21 @@ namespace BrunchLouisvilleCS.Models
         public string Title { get; set; }
         public int Rating { get; set; }
         public string WriteUp { get; set; }
+        public string Date { get; set; }
 
 
-        public Review(string title, int rating, string writeUp)
+        public Review(string title, int rating, string writeUp, string date)
         {
             Title = title;
             Rating = rating;
             WriteUp = writeUp;
+            Date = date;
+        }
 
+        public DateTime StringToDate(string date)
+        {
+            var dt = DateTime.Parse(date, System.Globalization.CultureInfo.InvariantCulture);
+            return dt;
         }
 
     }

@@ -37,9 +37,9 @@ namespace BrunchLouisvilleCS.Controllers
         public List<Review> ramsisReviews()
         {
             List<Review> reviews = new List<Review>();
-            Review review1 = new Review("Wonderful!", 5, "When we ate here the food was so good.  I recommend to everyone!");
-            Review review2 = new Review("Pukie", 1, "Vomit.  Pure vomit!");
-            Review review3 = new Review("A must have!", 4, "nothing bad to say.");
+            Review review1 = new Review("Wonderful!", 5, "When we ate here the food was so good.  I recommend to everyone!", "7/5/2018 6:02:00 PM");
+            Review review2 = new Review("Pukie", 1, "Vomit.  Pure vomit!", "7/1/2018 11:52:00 AM");
+            Review review3 = new Review("A must have!", 4, "nothing bad to say.", "6/28/2018 8:30:52 AM");
             reviews.Add(review1);
             reviews.Add(review2);
             reviews.Add(review3);
@@ -51,7 +51,7 @@ namespace BrunchLouisvilleCS.Controllers
         public List<Review> bristolReviews()
         {
             List<Review> reviews = new List<Review>();
-            Review review1 = new Review("Diamond in the Rough!", 5, "You can always count on it.");
+            Review review1 = new Review("Diamond in the Rough!", 5, "You can always count on it.", "6/28/2018 8:30:52 AM");
             
             reviews.Add(review1);
             

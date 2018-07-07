@@ -31,7 +31,7 @@
     @foreach (var y in x.Reviews)
     {
     <div class="review-list">
-        <h5>@y.Title - @y.Rating  Star</h5>
+        <h5>@y.Title - @y.Rating  Star (@y.StringToDate(y.Date).Date)</h5>
         <p>@y.WriteUp</p>
     </div>
 
