@@ -25,8 +25,8 @@ namespace BrunchLouisvilleCS.Controllers
 
         public void preBuiltRestaurants()
         {
-            Restaurant ramsis = new Restaurant("Ramsi's Cafe on the World", "Buffet", ramsisReviews());
-            Restaurant bristol = new Restaurant("Bristol's Cafe", "Buffet", new List<Review>());
+            Restaurant ramsis = new Restaurant("Ramsi's Cafe on the World", "Buffet", ramsisReviews(), "img/logo-ramsis.png");
+            Restaurant bristol = new Restaurant("Bristol's Cafe", "Buffet", bristolReviews(), "img/logo-bristol.png");
 
             eateries.Add(ramsis);
             eateries.Add(bristol);
@@ -44,6 +44,17 @@ namespace BrunchLouisvilleCS.Controllers
             reviews.Add(review2);
             reviews.Add(review3);
 
+            return reviews;
+
+        }
+
+        public List<Review> bristolReviews()
+        {
+            List<Review> reviews = new List<Review>();
+            Review review1 = new Review("Diamond in the Rough!", 5, "You can always count on it.");
+            
+            reviews.Add(review1);
+            
             return reviews;
 
         }

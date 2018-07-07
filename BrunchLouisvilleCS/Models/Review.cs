@@ -7,16 +7,16 @@ namespace BrunchLouisvilleCS.Models
 {
     public class Review
     {
-        private string Title { get; set; }
-        private int Rating { get; set; }
-        private string Description { get; set; }
+        public string Title { get; set; }
+        public int Rating { get; set; }
+        public string WriteUp { get; set; }
 
 
-        public Review(string title, int rating, string description)
+        public Review(string title, int rating, string writeUp)
         {
             Title = title;
             Rating = rating;
-            Description = description;
+            WriteUp = writeUp;
 
         }
 

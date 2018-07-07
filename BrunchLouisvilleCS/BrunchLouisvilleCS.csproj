@@ -102,7 +102,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="img\bristol-bar-and-grille-logo.png" />
+    <Content Include="img\logo-bristol.png" />
     <Content Include="img\eiderdown.png" />
     <Content Include="img\Fleur.png" />
     <Content Include="img\logo-ramsis.png" />
