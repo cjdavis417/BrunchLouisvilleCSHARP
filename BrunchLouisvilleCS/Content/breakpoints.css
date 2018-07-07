@@ -1,0 +1,143 @@
+@media (min-width: 1150px) {
+	.container {
+		width: 70%;
+		max-width: 960px;
+		margin: 0 auto;
+	}
+
+	.wrapper-main {
+		width: 70%;
+		max-width: 960px;
+		margin: 0 auto;
+	}
+
+	#form-submit-rest {
+		width: 65%;
+		max-width: 875px;
+		margin: 10 auto;
+	}
+
+	#bl-logo {
+		width: 900px;
+		padding-top: 30px;
+	}
+}
+
+@media (min-width: 660px) 
+	and (max-width: 1149px) {
+
+	.container {
+		width: 80%;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	.wrapper-main {
+		width: 80%;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	#form-submit-rest {
+		width: 75%;
+		max-width: 1000px;
+		margin: 10 auto;
+	}
+
+	.svg-brunch {
+		font-size: 100px;
+	}
+
+	.svg-louisville {
+		font-size: 28px;
+	}
+
+	#bl-logo {
+		width: 80%;
+	}
+
+}
+
+@media (max-width: 659px) {
+
+	header {
+		height: 160px;
+	}
+
+	.container {
+		width: 98%;
+		margin: 0 auto;
+	}
+
+	.title {
+		vertical-align: center;
+	}
+
+	.wrapper-main {
+		width: 98%;
+		margin: 0 auto;
+	}
+
+	article {
+		align-content: center;
+	}
+
+	.storeImg {
+		display: block;
+		margin: 0 auto;
+		float: none;
+	}
+
+	h3 {
+		display: block;
+		text-align: center;
+	}
+
+	.svg-brunch {
+		font-size: 65px;
+	}
+
+	.svg-louisville {
+		font-size: 18px;
+	}
+
+	.wrapper-button {
+		text-align: center;
+		justify-content: center;
+	}
+
+	#form-submit-rest {
+		width: 94%;
+		margin: 0 auto;
+	}
+
+	#map {
+		height: 250px;
+	}
+
+	.locMap.affix {
+		position: fixed;
+		top: 0;
+		width: 98%;
+	}
+
+	.first-restaurant {
+		margin-top: 300px;
+	}
+
+	nav {
+		margin-bottom: 0;
+	}
+
+	#bl-logo {
+		width: 95%;
+		padding-top: 0;
+	}
+
+	nav ul li a {
+		font-size: 0.8em;
+	}
+}
+
+/**  media querys for phones and devices **/
+

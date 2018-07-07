@@ -1,0 +1,408 @@
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+body {
+    background: radial-gradient(#fa709a, #fee140);
+    margin: 0;
+}
+
+/******************
+*     Wrappers    *
+******************/
+
+/* drop down content wrapper */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+}
+
+/* wraps the hours and specials tables within drop down */
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.wrapper-button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+/******************
+*  Header Styles  *
+******************/
+
+header {
+    margin: 0;
+    width: 100%;
+    height: 300px;
+    background-image: url(../img/site-ootb/orange-bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: linear-gradient(#eee, #aaa); */
+}
+
+#bl-logo {
+    display: block;
+    margin: 0 auto;
+    padding-top: 65px;
+}
+
+header .pos-brunch {
+    position: absolute;
+    top: 20px;
+    margin: 0;
+}
+
+header .pos-louisville {
+    position: absolute;
+    top: 50px;
+}
+
+.svg-header {
+    width: 100%;
+    height: 100px;
+    /* border: solid black 1px; */
+}
+
+.svg-brunch {
+    text-anchor: middle;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 120px;
+    fill: #fff;
+    stroke: #333;
+    stroke-width: 2px;
+}
+
+.svg-louisville {
+    text-anchor: middle;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 35px;
+    letter-spacing: 1em;
+    fill: crimson;
+    text-shadow: 0 0 10px #000, -1px -1px #000, 1px 1px #000
+    /* stroke: black;
+    stroke-width: 1px;
+    stroke-linecap: square; */
+}
+
+/*********************
+*      Main Body     *  
+**********************/
+
+main {
+    font-family: 'Lato', sans-serif;
+    background: #fff3db;
+}
+
+/*** navigation ***/
+
+nav {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+
+nav ul {
+    overflow: hidden;
+    height: 36px;
+    background: linear-gradient(#ddd, #eee);
+}
+
+nav ul li {
+    float: left;
+    margin: 0;
+    width: 33.3%;
+}
+
+nav ul li a {
+    text-align: center;
+    padding: 8px 0;
+    display: block;
+    width: 100%;
+    color: #777;
+    border-bottom: solid #a7a7a7 2px;
+    border-left: solid #bbb 2px;
+    border-right: solid #eee 2px;
+    background: linear-gradient(#eaeaea, #ccc);
+}
+
+nav ul li a:hover {
+    color: #555;
+    background: #eee;
+    background: linear-gradient(#fff, #cacaca);
+    border-bottom:solid rgb(155, 155, 155) 2px;
+    border-left:solid rgb(155, 155, 155) 2px;
+    border-right:solid #fff 2px;
+}
+
+/*****  Articles  *****/
+
+article {
+    margin: 10px 20px;
+    padding: 10px 0;
+    border-bottom: black solid 3px;
+}
+
+h3 {
+    background: orange;
+    border: 2px solid black;
+    display: inline-block;
+    padding: 2px 5px;
+    margin-top: 0;
+}
+
+.storeImg {
+    height: 125px;
+    float: left;
+    margin-right: 15px;
+}
+
+.write-up {
+    display: inline;
+    vertical-align: top;
+}
+
+.hours {
+    margin: 10px auto;
+}
+
+th {
+    text-align: right; /* test */
+}
+
+td {
+    padding-left: 5px;
+}
+
+tr:hover {
+    background-color: #d2e0ff;
+    -webkit-transition: background-color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.storeImgWrapper {
+    float: left;
+}
+
+.storeTxtWrapper {
+    overflow: hidden;
+}
+
+.storeTxt {
+    margin-right: 10px;
+    text-align: right;
+}
+
+#form-submit-rest {
+    margin: 0 auto;
+    width: 80%;
+}
+
+#form-submit-rest formheader {
+    margin: 0 auto;
+}
+
+.textbox-looks {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+footer {
+    height: 200px;
+    background: linear-gradient(#777, #555);
+    color: #eee;
+    padding: 10px;
+    text-align: center;
+}
+
+#footerText {
+    display: block;
+    margin: 0 auto;
+    padding: 10px auto;
+
+}
+
+#footerText ul li {
+    float: left;
+    margin-right: 14px;
+    font-size: 14px;
+}
+
+#footerText ul li:after {
+    content: "|";
+    margin: 14px;
+}
+
+#footerText ul li a:visited,
+#footerText ul li a:active,
+#footerText ul li a {
+    color: #eee;
+    text-decoration: none;
+}
+
+#copyright{
+    display: block;
+    margin-top: 30px;
+}
+
+.emailLink {
+    color: #333;
+}
+
+form {
+    max-width: 300px;
+    /* margin: 10px auto; */
+    padding: 10px 20px;
+    background: #adadad;
+    border-radius: 8px;
+  }
+
+.formheader {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+label.light {
+    font-weight: 300;
+    display: inline;
+    margin-left: 5px;
+  }
+
+.inputElement {
+    margin-bottom: 30px;
+}
+
+table {
+    color: #010066;
+    border-top: solid #555 1px;
+    margin: 3px;
+}
+
+button {
+    margin: 10px 0 0 0;
+    padding: 15px 35px;
+    background: linear-gradient(#eee, #ddd);
+    color: #010066;
+    font-size: 24px;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+    border: 2px solid #010066;
+  }
+
+button:hover {
+    background: linear-gradient(#ccc, #fff);
+}
+
+#button-submit {
+    text-align: center;
+    cursor: pointer;
+}
+
+#button-submit:hover {
+    background: linear-gradient(#fff, #ccc);
+}
+
+.button-restaurant-name {
+    display: inline-flex;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.button_address {
+    display: inline-flex;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 18px;
+}
+
+.accordion {
+cursor: pointer;
+padding: 18px;
+width: 100%;
+outline: none;
+transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.submitLogo {
+    max-width: 180px;
+}
+
+input[type=file] {
+    padding: 10px;
+}
+
+fieldset {
+    margin-bottom: 30px;
+    border: none;
+}
+
+legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.number {
+background-color: #ffe24b;
+color: #b18d05;
+height: 30px;
+width: 30px;
+display: inline-block;
+font-size: 0.8em;
+margin-right: 4px;
+line-height: 30px;
+text-align: center;
+text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+border-radius: 100%;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+.markerText {
+    margin: 0;
+}
+
+.markerText h3 {
+margin: 3px;
+}
+
+.markerText h4 {
+    margin: 0;
+    padding-top: 2px;
+    color: crimson;
+}
+
+#contact-body {
+    text-align: center;
+    color: #444;
+}
+
+#contact-link {
+    color: #a1a1a1;
+    text-shadow: 0 1px  black;
+}
