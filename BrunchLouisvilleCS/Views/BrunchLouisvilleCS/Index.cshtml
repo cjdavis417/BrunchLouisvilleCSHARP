@@ -13,36 +13,30 @@
     @foreach (var x in Model.restaurants)
     {
 
-<article>
-    <div class="storeheader">
-        <img alt=@x.Name class="storeImg" src=@x.Img>
-    </div>
-    <h3>@x.Type</h3>
-    <p>
-        Write-up will go here.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-    <button class="wrapper-button accordion">
-        <div class="button-restaurant-name">The Highlands</div>
-        <div class="button_address"> - 1293 Bardstown Road - </div>
-    </button>
-    <h4>Reviews</h4>
-    <hr />
+    <article>
+        <div class="storeheader">
+            <img alt=@x.Name class="storeImg" src=@x.Img>
+        </div>
+        <h3>@x.Type</h3>
+        <p>
+            Write-up will go here.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <button class="wrapper-button accordion">
+            <div class="button-restaurant-name">The Highlands</div>
+            <div class="button_address"> - 1293 Bardstown Road - </div>
+        </button>
+        <h4>Reviews</h4>
+        <hr />
 
-    @foreach (var y in x.Reviews)
-    {
-    <div class="review-list">
-        <h5>@y.Title - @y.Rating  Star (@y.StringToDate(y.Date).Date)</h5>
-        <p>@y.WriteUp</p>
-    </div>
+            @foreach (var y in x.Reviews)
+            {
+            <div class="review-list">
+                <h5>@y.Title - @y.Rating  Star (@y.StringToDate(y.Date).Date)</h5>
+                <p>@y.WriteUp</p>
+            </div>
 
-    }
+            }
     </article>
-
-
-
-
-
-
 
     }
 

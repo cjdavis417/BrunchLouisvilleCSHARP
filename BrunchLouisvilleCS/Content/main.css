@@ -118,6 +118,7 @@ nav ul {
     overflow: hidden;
     height: 36px;
     background: linear-gradient(#ddd, #eee);
+    list-style-type: none;
 }
 
 nav ul li {

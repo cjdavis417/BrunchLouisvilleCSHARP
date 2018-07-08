@@ -23,7 +23,7 @@ namespace BrunchLouisvilleCS.Models
 
         public DateTime StringToDate(string date)
         {
-            var dt = DateTime.Parse(date, System.Globalization.CultureInfo.InvariantCulture);
+            var dt = DateTime.Parse(date);
             return dt;
         }
 
