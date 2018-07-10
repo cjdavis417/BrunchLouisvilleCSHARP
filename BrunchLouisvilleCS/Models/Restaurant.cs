@@ -8,18 +8,19 @@ namespace BrunchLouisvilleCS.Models
 
     public class Restaurant
     {
-        public string Name { get; }
-        public string Type { get; }
+        public int RestaurantId { get; set; }
+        public string Name { get; set; }
+        public string Type { get; set; }
         public List<Review> Reviews { get; set; }
-        public string Img { get; }
+        public string LogoPath { get; set; }
 
 
-        public Restaurant(string name, string type, List<Review> reviews, string img)
+        public Restaurant(string name, string type, List<Review> reviews, string logoPath)
         {
             Name = name;
             Type = type;
             Reviews = reviews;
-            Img = img;
+            LogoPath = logoPath;
         }
 
         

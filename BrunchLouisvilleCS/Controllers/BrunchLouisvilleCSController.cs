@@ -5,16 +5,24 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Collections.Generic;
+using System.Data.Entity;
 
 namespace BrunchLouisvilleCS.Controllers
 {
     public class BrunchLouisvilleCSController : Controller
     {
 
+
         List<Restaurant> eateries = new List<Restaurant>();
         // GET: BrunchLouisvilleCS
         public ActionResult Index()
         {
+
+            using (var db = new BrunchLouisvilleContext())
+            {
+                
+
+            }
             preBuiltRestaurants();
 
             Restaurants restaurants = new Restaurants(eateries);

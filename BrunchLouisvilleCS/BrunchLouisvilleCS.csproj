@@ -130,7 +130,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Restaurant.cs" />
-    <Compile Include="Models\Restaurants.cs" />
+    <Compile Include="Data\Restaurants.cs" />
     <Compile Include="Models\Review.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
