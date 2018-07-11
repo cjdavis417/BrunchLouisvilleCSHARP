@@ -9,7 +9,7 @@ namespace BrunchLouisvilleCS.Models
 {
     public class BrunchLouisvilleContext : DbContext
     {
-        public DbSet<Restaurant> restaurants { get; set; }
+        public DbSet<Restaurant> Restaurants { get; set; }
 
 
         //public Restaurants(List<Restaurant> eateries)

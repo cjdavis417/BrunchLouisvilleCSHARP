@@ -7,15 +7,18 @@ namespace BrunchLouisvilleCS.Models
 {
     public class Review
     {
-        public string RestaurantId { get; }
+        public int ReviewId { get; set; }
+        public int RestaurantId { get; }
         public string Title { get; set; }
         public int Rating { get; set; }
         public string WriteUp { get; set; }
         public string Date { get; set; }
 
 
-        public Review(string title, int rating, string writeUp, string date)
+        public Review(int reviewId, int restaurantId, string title, int rating, string writeUp, string date)
         {
+            ReviewId = reviewId;
+            RestaurantId = restaurantId;
             Title = title;
             Rating = rating;
             WriteUp = writeUp;

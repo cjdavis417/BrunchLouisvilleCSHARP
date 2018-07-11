@@ -15,8 +15,9 @@ namespace BrunchLouisvilleCS.Models
         public string LogoPath { get; set; }
 
 
-        public Restaurant(string name, string type, List<Review> reviews, string logoPath)
+        public Restaurant(int restaurantId, string name, string type, List<Review> reviews, string logoPath)
         {
+            RestaurantId = restaurantId;
             Name = name;
             Type = type;
             Reviews = reviews;
