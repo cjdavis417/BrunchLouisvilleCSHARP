@@ -1,6 +1,6 @@
 ﻿@using BrunchLouisvilleCS.Models;
 
-@model Restaurants
+@model BrunchLouisvilleContext
 
 @{
     
@@ -10,12 +10,12 @@
 
     
 
-    @foreach (var x in Model.restaurants)
+    @foreach (var x in Model.Restaurants)
     {
 
     <article>
         <div class="storeheader">
-            <img alt=@x.Name class="storeImg" src=@x.Img>
+            <img alt=@x.Name class="storeImg" src=@x.LogoPath>
         </div>
         <h3>@x.Type</h3>
         <p>
