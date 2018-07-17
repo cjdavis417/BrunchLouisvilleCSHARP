@@ -19,32 +19,32 @@ namespace BrunchLouisvilleCS.Controllers
         public ActionResult Index()
         {
             IEnumerable<Restaurant> restaurants;
-            using (var db = new BrunchLouisvilleContext())
+            using (var context = new BrunchLouisvilleContext())
             {
 
-                restaurants = from e in db.Restaurants
-                              select new Restaurant
-                              {
-                                  restID = e.RestaurantId,
-                                  //restName = e.Name,
-                                  //restType= e.Type,
-                                  //restReviews = e.Reviews,
-                                  //restLogo = e.LogoPath
-                              };
+                //restaurants = from e in db.Restaurants
+                //              select new Restaurant
+                //              {
+                //                  restID = e.RestaurantId,
+                //                  //restName = e.Name,
+                //                  //restType= e.Type,
+                //                  //restReviews = e.Reviews,
+                //                  //restLogo = e.LogoPath
+                //              };
 
-                Restaurant ramsis = new Restaurant(1, "Ramsi's Cafe on the World", "Buffet", ramsisReviews(), "img/logo-ramsis.png");
-                Restaurant bristol = new Restaurant(2, "Bristol's Cafe", "Buffet", bristolReviews(), "img/logo-bristol.png");
+                //Restaurant ramsis = new Restaurant(1, "Ramsi's Cafe on the World", "Buffet", ramsisReviews(), "img/logo-ramsis.png");
+                //Restaurant bristol = new Restaurant(2, "Bristol's Cafe", "Buffet", bristolReviews(), "img/logo-bristol.png");
                 
-                db.Restaurants.Add(ramsis);
-                db.Restaurants.Add(bristol);
-                db.SaveChanges();
+                //context.Restaurants.Add(ramsis);
+                //context.Restaurants.Add(bristol);
+                context.SaveChanges();
                 
 
                 
 
             }
 
-            return View(restaurants);
+            return View();
         }
 
 
